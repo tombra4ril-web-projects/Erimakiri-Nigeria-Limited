@@ -1,0 +1,123 @@
+.services-item{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(auto-fit, minmax(50px, 500px));
+  gap: 2rem;
+  padding: 5rem 5%;
+}
+.services-items > div:nth-of-type(even){
+  background-color: rgba(245, 245, 245, 0.9);
+}
+.services-item img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.services-item .service_text{
+  font-family: 'Tangerine', cursive;
+  font-size: 3rem;
+}
+.services-item h3{
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.services-item p + p{
+  margin-top: 1rem;
+}
+.services-item .service_text:nth-of-type(even){
+  font-family: 'Kalam', cursive;
+  font-size: 1.5rem;
+}
+.solutions-div{
+  padding: 5rem 5%;
+}
+.solution-div{
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+.solutions{
+  background-color: rgba(20, 100, 200, 0.8);
+  color: white;
+  width: 300px;
+  padding-bottom: 2rem;
+  cursor: pointer;
+}
+.solutions:hover{
+  transition: all 0.5s ease-in-out;
+  box-shadow: 1px 1px 2px 2px rgba(20, 100, 200, 0.8);
+}
+.solutions-img{
+  position: relative;
+}
+.solutions-img::after{
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(20, 20, 20, 0.4);
+  z-index: 10;
+}
+.solutions img{
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+.solutions-text{
+  padding: 1rem;
+}
+.solutions-text p{
+  margin-top: 1rem;
+}
+.solutions-text h3{
+  text-transform: capitalize;
+  font-size: 2rem;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+@media screen and (max-width: 1000px){
+  div.services-item{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto minmax(50px, 500px);
+    grid-template-areas: 
+      "text"
+      "img";
+  }
+  #trans_cool_veh .service_text{
+    grid-area: text;
+  }
+  #trans_cool_veh .service_img{
+    grid-area: img;
+  }
+  #res_rec_veh .service_text{
+    grid-area: text;
+  }
+  #res_rec_veh .service_img{
+    grid-area: img;
+  }
+  #cold_room .service_text{
+    grid-area: text;
+  }
+  #cold_room .service_img{
+    grid-area: img;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .services-item .service_text:nth-of-type(even){
+    font-size: 1rem;
+  }
+  .services-item .service_text{
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 800px){
+  .solution-div{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+  } 
+}

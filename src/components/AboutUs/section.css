@@ -1,0 +1,71 @@
+.about-item{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(auto-fit, minmax(50px, auto));
+  gap: 2rem;
+  padding: 5rem 5%;
+}
+.about-title{
+  font-size: 2rem;
+  font-weight: bold;
+}
+.about-items > div:nth-of-type(even){
+  background-color: rgba(245, 245, 245, 0.9);
+}
+.about-item .about-text{
+  font-family: 'Tangerine', cursive;
+  font-size: 3rem;
+}
+.about-item p + p{
+  margin-top: 1rem;
+}
+.about-item .about-text:nth-of-type(even){
+  font-family: 'Kalam', cursive;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1000px){
+  div.about-item{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto minmax(50px, auto);
+    grid-template-areas: 
+      "title"
+      "text";
+  }
+  #about .about-text{
+    grid-area: text;
+  }
+  #about .about-title{
+    grid-area: title;
+  }
+  #mission .about-text{
+    grid-area: text;
+  }
+  #mission .about-title{
+    grid-area: title;
+  }
+  #vision .about-text{
+    grid-area: text;
+  }
+  #vision .about-title{
+    grid-area: title;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .about-item .about-text:nth-of-type(even){
+    font-size: 1.3rem;
+  }
+  .about-item .about-text{
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 800px){
+  .solution-div{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+  } 
+}

@@ -1,0 +1,127 @@
+div.section-div-cards{
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+.section-div-card{
+  border-top: 10px solid #388920;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  box-shadow: 2px 2px 3px 1px #bbbbbb;
+  display: inline-block;
+  width: 400px;
+}
+.section-div-card img{
+  border-radius: 50%;
+  margin-bottom: 50px;
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  background-color: rgba(20, 20, 20, 0.8);
+}
+.section-div-card-body{
+  text-align: left;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+.section-div-card-body h5{
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+#teams{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: rgba(249, 249, 249, 1);
+}
+.title-head{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.title-head span{
+  color:  rgba(20, 100, 200, 0.8);;
+  position: relative;
+}
+.title-head span::after{
+  content: "";
+  position: absolute;
+  left: 0px;
+  transform: translateX(50%);
+  height: 100%;
+  width: 50%;
+  border-bottom: solid 3px rgba(20, 100, 200, 0.8);;
+}
+.team-link{
+  margin-top: 2em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+.team-link p{
+  margin-bottom: 1em;
+  text-align: left;
+}
+.team-link a{
+  cursor: pointer;
+  font-size: 2rem;
+}
+.team-link a + a{
+  margin-left: 2em;
+}
+.fb-icon{
+  color: blue;
+}
+.tw-icon{
+  color: cyan;
+}
+.ld-icon{
+  color: red;
+}
+@media only screen and (max-width: 800px){
+  #teams{
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  div.section-div-card{
+    border-top: 5px solid #388920;
+  }
+}
+@media only screen and (max-width: 400px){
+  div.section-div-cards{
+    margin-top: 1rem;
+  }
+  .section-div-card{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .section-div-card img{
+    margin-bottom: 1rem;
+  }
+  .section-div-card-body{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .section-div-card-body h5{
+    font-size: 1.5rem;
+    margin-bottom: 0.2rem;
+  }
+  #teams{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .team-link{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .team-link p{
+    margin-bottom: 1rem;
+  }
+  .team-link a{
+    font-size: 2rem;
+  }
+  .team-link a + a{
+    margin-left: 2rem;
+  }
+}

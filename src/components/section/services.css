@@ -1,0 +1,121 @@
+.sections{
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.services{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: rgba(249, 249, 249, 1);
+}
+.service-items{
+  display: grid;
+  color: white;
+  gap: 50px;
+  justify-content: center;
+  grid-template-columns: minmax(400px, 800px);
+  grid-template-rows: repeat(3, minmax(400px, auto));
+  grid-template-areas: 
+    "first"
+    "second"
+    "third";
+}
+.first-service{
+  grid-area: first;
+  background-color: rgba(20, 100, 200, 0.8);
+  color: rgba(20, 100, 200, 0.8);
+}
+.second-service{
+  grid-area: second;
+  background-color: rgba(100, 200, 20, 0.8);
+  color: rgba(100, 200, 20, 0.8);
+}
+.third-service{
+  grid-area: third;
+  background-color: rgba(200, 20, 100, 0.8);
+  color: rgba(200, 20, 100, 0.8);
+}
+.service-item{
+  display: flex;
+  align-items: center;
+  padding: 50px;
+  box-shadow: 1px 1px 1px 1px #bbbbbb;
+}
+.service-item-icon-div{
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  color: white;
+  align-self: center;
+}
+.service-item-icon-div span{
+  font-size: 80px;
+  margin-bottom: 50px;
+}
+.service-item-descs{
+  width: 100%;
+}
+.service-item-desc{
+  padding-top: 2em;
+}
+.service-item-descs h5{
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: white;
+  text-align: center;
+}
+.service-item-desc p{
+  font-size: 20px;
+  color: white;
+}
+.service-item-desc > p:last-child{
+  display: inline-block;
+  margin-top: 20px;
+  background-color: white;
+  color: inherit;
+  border-radius: 10px;
+}
+.service-item-desc > p:last-child:hover{
+  transition: all 0.5s ease-in-out;
+  color: white;
+  border: solid 1px white;
+  background-color: inherit;
+  box-shadow: 1px 1px 1px 1px #bbbbbb;
+}
+.service-item-desc > p:last-child a{
+  cursor: pointer;
+  display: block;
+  padding: 10px;
+  color: inherit;
+}
+
+@media only screen and (max-width: 800px){
+  .service-items{
+    grid-template-columns: 95%;
+  }
+  .service-item{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media screen and (max-width: 400px){
+  .service-items{
+    grid-template-columns: minmax(200px, 400px);
+    grid-template-rows: repeat(3, minmax(200px, auto));
+  }
+  div.service-item{
+    padding: 1rem;
+  }
+  .service-item-desc{
+    padding-top: 1rem;
+  }
+  .service-item-descs h5{
+    font-size: 1.5rem;
+  }
+  .service-item-desc p{
+    font-size: 1rem;
+  }
+  .service-item-desc > p:last-child{
+    margin-top: 1rem;
+    border-radius: 10px;
+  }
+}
