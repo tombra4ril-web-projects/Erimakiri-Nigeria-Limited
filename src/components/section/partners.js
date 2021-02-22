@@ -34,7 +34,7 @@ const Partners = () => {
               <img src="/images/profile_3.jpeg" alt="Heat oven" />
             </div>
             <div className="partners-text">
-              <h3>CFO</h3>
+              <h3>R&D Engr.</h3>
             </div>
           </div>
           <div className="partners" title="View Profile">

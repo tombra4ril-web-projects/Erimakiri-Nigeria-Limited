@@ -72,10 +72,10 @@ export const NavBar = () => {
           <div>
             <ul id="menu-ul" className="menu-list">
               <li className="link">
-                <NavLink to="/" activeClassName="active">Home</NavLink>
+                <NavLink to="/">Home</NavLink>
               </li>
               <li className="link">
-                <NavLink to="/services" activeClassName="active">Services</NavLink>
+                <NavLink to="/services">Services</NavLink>
               </li>
               <li className="link">
                 <NavLink to="/about-us">About Us</NavLink>

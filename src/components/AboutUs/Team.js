@@ -38,8 +38,8 @@ export const Team = () => {
         <div id="team3" className="section-div-card">
           <img src="images/profile_3.jpeg" alt="..." />
           <div className="section-div-card-body">
-            <h5>Mrs. Amakiri</h5>
-            <p>B.Eng. Agric. & Environmental Engr.</p>
+            <h5>Dr. Chandrasekhar Pradhan</h5>
+            <p>Doctoral Researcher in Microwave Engineering (THz Applications) | Associate Fellow of Higher Education Academy-UK</p>
             <div className="team-link">
               <p>Visit to know more...</p>
               <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><span className="fb-icon fab fa-facebook"></span></a>

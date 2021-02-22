@@ -40,7 +40,7 @@
 }
 .quick-link:hover{
   transition: all 0.5 ease-in-out;
-  color: black;
+  color: rgba(50, 150, 200, 0.9);
   background-color: white;
 }
 @keyframes welcometext {
