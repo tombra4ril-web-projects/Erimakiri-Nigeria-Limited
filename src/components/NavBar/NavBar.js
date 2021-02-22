@@ -19,27 +19,31 @@ export const NavBar = () => {
         <li className="link">
           <NavLink 
             to="/"
+            exact
             onClick={() => setShowMenu(false)}>
             Home
           </NavLink>
         </li>
         <li className="link">
           <NavLink 
-            to="/services" 
+            to="/services"
+            exact
             onClick={() => setShowMenu(false)}>
             Services
           </NavLink>
         </li>
         <li className="link">
           <NavLink 
-            to="/about-us" 
+            to="/about-us"
+            exact
             onClick={() => setShowMenu(false)}>
             About Us
           </NavLink>
         </li>
         <li className="link">
           <NavLink 
-            to="/contact-us" 
+            to="/contact-us"
+            exact 
             onClick={() => setShowMenu(false)}>
             Contact Us
           </NavLink>
@@ -72,16 +76,16 @@ export const NavBar = () => {
           <div>
             <ul id="menu-ul" className="menu-list">
               <li className="link">
-                <NavLink to="/">Home</NavLink>
+                <NavLink to="/" exact>Home</NavLink>
               </li>
               <li className="link">
-                <NavLink to="/services">Services</NavLink>
+                <NavLink to="/services" exact>Services</NavLink>
               </li>
               <li className="link">
-                <NavLink to="/about-us">About Us</NavLink>
+                <NavLink to="/about-us" exact>About Us</NavLink>
               </li>
               <li className="link">
-                <NavLink to="/contact-us">Contact Us</NavLink>
+                <NavLink to="/contact-us" exact>Contact Us</NavLink>
               </li>
             </ul>
             <div id="menu-button" className="hidden" onClick={handleMenu}>
