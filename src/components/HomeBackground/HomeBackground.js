@@ -1,10 +1,14 @@
 import React from 'react'
 import './HomeBackground.css'
+import {useHistory} from "react-router-dom"
 
 export const HomeBackground = () => {
+  const history = useHistory()
+
   const handleClick = () => {
-    window.location.href = "/services"
+    history.push("/services")
   }
+
   return (
     <div>
       <div className="nav-background" style={{backgroundImage: "url(/images/home.jpeg)"}}>

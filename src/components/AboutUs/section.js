@@ -26,7 +26,7 @@ const AboutSection = () => {
           <h3>Vision Statement</h3>
         </div>
         <div className="about-text">
-          <p>Our vision is to proviced for all african contries environmental friendly cold production systems in the near future</p>
+          <p>Our vision is to provide for all african countries, environmental friendly cold production systems in the near future</p>
         </div>
       </div>
     </div>

@@ -1,11 +1,13 @@
 import React from 'react'
 import "./partners.css"
+import {useHistory} from "react-router-dom"
 
 const Partners = () => {
+  const history = useHistory()
+
   const handleClick = (event) => {
-    console.log("Clicked")
     let teamId = event.currentTarget.getAttribute("data-id")
-    window.location.href = "/about-us#team" + teamId
+    history.push("/about-us#team" + teamId)
   }
   return (
     <div className="partners-div">

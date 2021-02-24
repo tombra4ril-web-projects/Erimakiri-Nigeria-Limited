@@ -14,8 +14,8 @@
   object-fit: cover;
 }
 .services-item .service_text{
-  font-family: 'Tangerine', cursive;
-  font-size: 3rem;
+  font-family: 'Kalam', cursive;
+  font-size: 2rem;
 }
 .services-item h3{
   text-align: center;
@@ -23,10 +23,6 @@
 }
 .services-item p + p{
   margin-top: 1rem;
-}
-.services-item .service_text:nth-of-type(even){
-  font-family: 'Kalam', cursive;
-  font-size: 1.5rem;
 }
 .solutions-div{
   padding: 5rem 5%;
@@ -104,12 +100,9 @@
   }
 }
 
-@media screen and (max-width: 600px){
-  .services-item .service_text:nth-of-type(even){
-    font-size: 1rem;
-  }
+@media screen and (max-width: 400px){
   .services-item .service_text{
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 @media screen and (max-width: 800px){

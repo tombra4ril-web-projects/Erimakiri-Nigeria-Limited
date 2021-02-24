@@ -11,12 +11,12 @@ const ServiceSection = () => {
         <div className="service_text">
           <h3>Transport Cooling Vehicle</h3>
           <p>We provide refrigerated trucks for the transport of perishable food items and pharmaceuticals using our emission free technology. </p>
-          <p>This uses a combination of fuel cell exhaust heat and vapour absoption systems for refrigerated transport application makes us outstanding.</p>
+          <p>This makes us outstanding as we use a combination of fuel cell and absorption system for transport refrigeration.</p>
         </div>
       </div>
       <div id="res_rec_veh" className="services-item">
         <div className="service_text">
-        <h3>Residential and Recreational Vehicles Air-Condition</h3>
+        <h3>Residential and Recreational Vehicles Air-Conditioning</h3>
           <p>With our heat driven cooling technology, your residential, commercial, and institutional air-conditioning needs can be met without requiring electricity. </p>
         </div>
         <div>
