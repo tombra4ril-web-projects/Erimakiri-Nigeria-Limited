@@ -17,7 +17,7 @@ export const Services = () => {
             <h5>Transport Cooling Vehicle</h5>
             <div className="service-item-desc">
               <p>We provide refrigerated trucks for the transport of perishable food items and pharmaceuticals using our emission free technology... </p>
-              <p className="services-link"><Link to="/services#trans_cool_veh">Learn more...</Link></p>
+              <p className="services-link"><Link smooth to="/services#trans_cool_veh">Learn more...</Link></p>
             </div>
           </div>
         </div>
@@ -29,7 +29,7 @@ export const Services = () => {
             <h5>Residential and Recreational Vehicles Air-condition</h5>
             <div className="service-item-desc">
               <p>With our heat driven cooling technology, residential commercial...</p>
-              <p className="services-link"><Link to="/services#res_rec_veh">Learn more...</Link></p>
+              <p className="services-link"><Link smooth to="/services#res_rec_veh">Learn more...</Link></p>
             </div>
           </div>
         </div>
@@ -41,7 +41,7 @@ export const Services = () => {
             <h5>Cooling rooms / Refrigeration</h5>
             <div className="service-item-desc">
               <p>We build cold rooms...</p>
-              <p className="services-link"><Link to="/services#cold_room">Learn more...</Link></p>
+              <p className="services-link"><Link smooth to="/services#cold_room">Learn more...</Link></p>
             </div>
           </div>
         </div>

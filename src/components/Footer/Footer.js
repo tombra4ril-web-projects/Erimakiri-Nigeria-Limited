@@ -1,6 +1,6 @@
 import React from 'react'
 import './Footer.css'
-import {HashLink as Link} from "react-router-hash-link"
+import {HashLink} from "react-router-hash-link"
 
 export const Footer = () => {
   return (
@@ -14,18 +14,18 @@ export const Footer = () => {
           <div className="footer-services">
             <h5>Services</h5>
             <ul className="footer-dull-colour">
-              <li><Link to="/services#trans_cool_veh">Transport cooling vehicle</Link></li>
-              <li><Link to="/services#res_rec_veh">Residential and recreational vehicles air-condition</Link></li>
-              <li><Link to="/services#cold_room">Cold room/Refrigeration</Link></li>
+              <li><HashLink smooth to="/services#trans_cool_veh">Transport cooling vehicle</HashLink></li>
+              <li><HashLink smooth to="/services#res_rec_veh">Residential and recreational vehicles air-condition</HashLink></li>
+              <li><HashLink smooth to="/services#cold_room">Cold room/Refrigeration</HashLink></li>
             </ul>
           </div>
           <div className="footer-quick-links">
             <h5>Quick Links</h5>
             <ul className="footer-dull-colour">
-              <li><Link to="/">Home</Link></li>
-              <li><Link to="/services">Services</Link></li>
-              <li><Link to="/about-us">About Us</Link></li>
-              <li><Link to="/contact-us">Contact Us</Link></li>
+              <li><HashLink smooth to="/#">Home</HashLink></li>
+              <li><HashLink smooth to="/services/#">Services</HashLink></li>
+              <li><HashLink smooth to="/about-us/#">About Us</HashLink></li>
+              <li><HashLink smooth to="/contact-us/#">Contact Us</HashLink></li>
             </ul>
           </div>
           <div className="footer-contact-us">
