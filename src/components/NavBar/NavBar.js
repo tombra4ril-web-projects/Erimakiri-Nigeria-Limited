@@ -1,5 +1,5 @@
 import {React, useState } from 'react'
-import {NavLink } from 'react-router-dom'
+import {NavLink, useHistory} from 'react-router-dom'
 import './NavBar.css'
 import ViewPort from "../modules/ViewPort"
 
@@ -15,7 +15,14 @@ export const NavBar = () => {
   const SideMenu = () => (
     <div className="side-bar">
       <ul>
-        <li className="material-icons" onClick={handleMenu}>close</li>
+        <li>
+          <div className="logo-div">
+              <img src="/images/logo_32.png" alt="Company logo" onClick={handleLogo}></img>
+          </div>
+          <div className="material-icons close-button" onClick={handleMenu}>
+            close
+          </div>
+        </li>
         <li className="link">
           <NavLink 
             to="/"
@@ -60,8 +67,10 @@ export const NavBar = () => {
     setShowMenu(!showSideMenu)
   }
 
+  const history = useHistory()
   const handleLogo = () => {
-    window.location.href = "/"
+    setShowMenu(false)
+    history.push("/")
   }
 
   return (

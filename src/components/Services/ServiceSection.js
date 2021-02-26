@@ -1,10 +1,11 @@
 import React from 'react'
 import "./ServiceSection.css"
+import ScrollAimation from "react-animate-on-scroll"
 
 const ServiceSection = () => {
   return (
     <div className="services-items">
-      <div id="trans_cool_veh" className="services-item">
+      <ScrollAimation animateIn="fadeIn" id="trans_cool_veh" className="services-item">
         <div className="service_img">
           <img src="/images/ref_truck.png" alt="Regrigeration truck" />
         </div>
@@ -13,17 +14,17 @@ const ServiceSection = () => {
           <p>We provide refrigerated trucks for the transport of perishable food items and pharmaceuticals using our emission free technology. </p>
           <p>This makes us outstanding as we use a combination of fuel cell and absorption system for transport refrigeration.</p>
         </div>
-      </div>
-      <div id="res_rec_veh" className="services-item">
+      </ScrollAimation>
+      <ScrollAimation animateIn="fadeIn" id="res_rec_veh" className="services-item">
         <div className="service_text">
-        <h3>Residential and Recreational Vehicles Air-Conditioning</h3>
+          <h3>Residential and Recreational Vehicles Air-Conditioning</h3>
           <p>With our heat driven cooling technology, your residential, commercial, and institutional air-conditioning needs can be met without requiring electricity. </p>
         </div>
-        <div>
+        <div className="service_img">
           <img src="/images/ac.png" alt="Air condition" />
         </div>
-      </div>
-      <div id="cold_room" className="services-item">
+      </ScrollAimation>
+      <ScrollAimation animateIn="fadeIn" id="cold_room" className="services-item">
         <div className="service_img">
           <img src="/images/cold_room.png" alt="Cold room" />
         </div>
@@ -32,8 +33,8 @@ const ServiceSection = () => {
           <p>We build cold rooms that are emission free with our cutting edge technology.</p>
           <p>We also provide fridge that do not require electricity.</p>
         </div>
-      </div>
-      <div className="solutions-div">
+      </ScrollAimation>
+      <ScrollAimation animateIn="fadeIn" className="solutions-div">
         <div className="title-head">
           <h1><span>OTHER SOLUTIONS</span></h1>
         </div>
@@ -66,7 +67,7 @@ const ServiceSection = () => {
             </div>
           </div>
         </div>
-      </div>
+      </ScrollAimation>
     </div>
   )
 }

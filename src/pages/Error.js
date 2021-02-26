@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from "styled-components"
+import ScrollAnimation from "react-animate-on-scroll"
 
 const ErrDiv = styled.div`
   background-color: rgba(20, 100, 200, 0.8);
@@ -33,8 +34,8 @@ export const Error = () => {
   )
 
   return (
-    <div>
+    <ScrollAnimation animateIn="fadeIn">
       <ErrorDiv />
-    </div>
+    </ScrollAnimation>
   )
 }

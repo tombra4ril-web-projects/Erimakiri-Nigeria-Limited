@@ -8,6 +8,8 @@
 .about-title{
   font-size: 2rem;
   font-weight: bold;
+  align-self: center;
+  justify-self: center;
 }
 .about-items > div:nth-of-type(even){
   background-color: rgba(245, 245, 245, 0.9);

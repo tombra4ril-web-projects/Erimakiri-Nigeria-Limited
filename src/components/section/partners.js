@@ -1,6 +1,7 @@
 import React from 'react'
 import "./partners.css"
 import {useHistory} from "react-router-dom"
+import ScrollAnimation from "react-animate-on-scroll"
 
 const Partners = () => {
   const history = useHistory()
@@ -10,7 +11,7 @@ const Partners = () => {
     history.push("/about-us#team" + teamId)
   }
   return (
-    <div className="partners-div">
+    <ScrollAnimation animateIn="flipInY" className="partners-div">
         <div className="title-head">
           <h1><span>OUR TEAM</span></h1>
         </div>
@@ -56,7 +57,7 @@ const Partners = () => {
             </div>
           </div>
         </div>
-      </div>
+      </ScrollAnimation>
   )
 }
 
