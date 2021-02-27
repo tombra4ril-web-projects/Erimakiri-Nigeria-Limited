@@ -10,6 +10,7 @@
   font-weight: bold;
   align-self: center;
   justify-self: center;
+  text-align: center;
 }
 .about-items > div:nth-of-type(even){
   background-color: rgba(245, 245, 245, 0.9);
