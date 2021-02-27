@@ -5,11 +5,11 @@ import {
 } from "react-router-dom"
 import {Home} from "./pages/Home"
 import {Services} from "./pages/Services"
-import {Contact} from './pages/Contact';
-import {About} from './pages/About';
-import {Error} from './pages/Error';
-import { Footer } from "./components/Footer/Footer";
-import { NavBar } from "./components/NavBar/NavBar";
+import {Contact} from './pages/Contact'
+import {About} from './pages/About'
+import {Error} from './pages/Error'
+import {Footer} from "./components/Footer/Footer"
+import {NavBar} from "./components/NavBar/NavBar"
 
 const App = () => {
   return (

@@ -17,7 +17,7 @@ export const NavBar = () => {
       <ul>
         <li>
           <div className="logo-div">
-              <img src="/images/logo_32.png" alt="Company logo" onClick={handleLogo}></img>
+              <img src="/images/logo_32.png" alt="Company logo" onClick={handleLogo} />
           </div>
           <div className="material-icons close-button" onClick={handleMenu}>
             close
