@@ -32,16 +32,24 @@ export const Footer = () => {
             <h5>Contact Us</h5>
             <ul className="footer-dull-colour">
               <div>
-                <a href="tel:+2348105912717">
+                {/* <a href="tel:+2348105912717">
                   <li className="material-icons">phone</li>
                   <span>+2347049597113</span> <span className="tel-num">|</span>
+                  <span>+447459556166</span>
+                </a> */}
+                <span className="material-icons contact-icon">phone</span>
+                <a href="tel:+2347049597113">
+                  <span>+2347049597113</span>
+                </a>
+                <span className="tel-num">|</span>
+                <a href="tel:+447459556166">
                   <span>+447459556166</span>
                 </a>
               </div>
               <div>
-                <a href="mailto:erimark28@yahoo.com">
-                  <li className="material-icons">email</li>
-                  <span>erimark28@yahoo.com</span>
+                <span className="material-icons contact-icon">email</span>
+                <a href="mailto:erimakirinigerialimited@gmail.com">
+                  <span>erimakirinigerialimited@gmail.com</span>
                 </a>
               </div>
             </ul>

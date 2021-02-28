@@ -3,7 +3,6 @@ div.section-div-cards{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* gap: 50px; */
 }
 .section-div-card{
   border-top: solid 10px rgba(20, 100, 200, 0.8);
@@ -17,15 +16,6 @@ div.section-div-cards{
   margin-right: 25px;
   margin-bottom: 50px;
 }
-/* .section-div-card{
-  border-top: solid 10px rgba(20, 100, 200, 0.8);
-  text-align: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  box-shadow: 2px 2px 3px 1px #bbbbbb;
-  display: inline-block;
-  width: 400px;
-} */
 .section-div-card img{
   border-radius: 50%;
   margin-bottom: 50px;
@@ -33,6 +23,7 @@ div.section-div-cards{
   height: 200px;
   object-fit: contain;
   background-color: rgba(20, 20, 20, 0.8);
+  cursor: pointer;
 }
 .section-div-card-body{
   text-align: left;

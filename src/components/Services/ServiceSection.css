@@ -1,12 +1,12 @@
+.services-items > div:nth-of-type(even){
+  background-color: rgba(245, 245, 245, 0.9);
+}
 .services-item{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(auto-fit, minmax(50px, 500px));
   gap: 2rem;
   padding: 5rem 5%;
-}
-.services-items > div:nth-of-type(even){
-  background-color: rgba(245, 245, 245, 0.9);
 }
 .services-item img{
   width: 100%;
@@ -100,11 +100,6 @@
   }
 }
 
-@media screen and (max-width: 400px){
-  .services-item .service_text{
-    font-size: 1.5rem;
-  }
-}
 @media screen and (max-width: 800px){
   .solution-div{
     display: flex;
@@ -113,4 +108,10 @@
     justify-content: center;
     align-items: center;
   } 
+}
+
+@media screen and (max-width: 600px){
+  .services-item .service_text{
+    font-size: 1.5rem;
+  }
 }

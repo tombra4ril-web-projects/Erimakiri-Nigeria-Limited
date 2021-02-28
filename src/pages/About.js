@@ -5,7 +5,7 @@ import ScrollAnimation from "react-animate-on-scroll"
 
 export const About = () => {
   return (
-    <ScrollAnimation animateIn="fadeIn" duration="2">
+    <ScrollAnimation animateIn="fadeIn">
       <AboutSection />
       <Team />
     </ScrollAnimation>

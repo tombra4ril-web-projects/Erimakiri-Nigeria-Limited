@@ -49,21 +49,21 @@ footer > div:first-child > div{
 .footer-contact-us div{
   display: flex;
 }
-.footer-contact-us div li{
-  margin-right: 1rem;
-}
 .footer-contact-us a{
   text-decoration: none;
+}
+.footer-contact-us .contact-icon{
+  margin-right: 10px;
 }
 .footer-contact-us a span:hover{
   color: white;
 }
 .footer-contact-us div:nth-child(n+2){
-  padding-top: 0.5rem;
+  margin-top: 1rem;
 }
 .tel-num{
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 footer li{
   cursor: pointer;

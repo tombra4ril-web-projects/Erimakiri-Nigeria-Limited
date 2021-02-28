@@ -57,7 +57,7 @@ const ServiceSection = () => {
             </div>
             <div className="solutions">
               <div className="solutions-img">
-                <img src="/images/cold_room_1.png" alt="Cold room" />
+                <img src="/images/show_glass_warmer.png" alt="Show glass warmer" />
               </div>
               <div className="solutions-text">
                 <h3>solar heat driven oven</h3>

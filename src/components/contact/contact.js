@@ -7,9 +7,9 @@ const ContactSection = () => {
       <h3>Get in touch.<br />
           Chat, write or stop by.
       </h3>
-      <p>EMAKIRI NIGERIA LIMITED, No. 6 Tombia Rd, Yenagoa, Nigeria</p>
+      <p>ERIMAKIRI NIGERIA LIMITED, #6 Big Church Road, off Tombia/Amassoma Road, Yenagoa, Bayelsa State, Nigeria</p>
       <span>
-        <a href="mailto:erimark28@yahoo.com">
+        <a href="mailto:erimakirinigerialimited@gmail.com">
           Email Us
         </a>
       </span>

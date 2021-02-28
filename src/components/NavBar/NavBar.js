@@ -1,5 +1,7 @@
-import {React, useState } from 'react'
-import {NavLink, useHistory} from 'react-router-dom'
+import {React, useState, useEffect} from 'react'
+// import {NavLink, useHistory} from 'react-router-dom'
+import {useHistory} from 'react-router-dom'
+import {HashLink as NavLink} from "react-router-hash-link"
 import './NavBar.css'
 import ViewPort from "../modules/ViewPort"
 
@@ -7,10 +9,12 @@ export const NavBar = () => {
   const [showSideMenu, setShowMenu] = useState(false)
   const widthBreakpoint = 800;
   
-  let viewport = ViewPort()
-  if(showSideMenu && (viewport.width > widthBreakpoint)){
-    setShowMenu(false)
-  }
+  const width = ViewPort()
+  useEffect(() => {
+    if(width >= widthBreakpoint){
+      setShowMenu(false)
+    }
+  }, [width, showSideMenu])
   
   const SideMenu = () => (
     <div className="side-bar">
@@ -25,32 +29,32 @@ export const NavBar = () => {
         </li>
         <li className="link">
           <NavLink 
-            to="/"
-            exact
+            to="/#"
+            smooth
             onClick={() => setShowMenu(false)}>
             Home
           </NavLink>
         </li>
         <li className="link">
           <NavLink 
-            to="/services"
-            exact
+            to="/services/#"
+            smooth
             onClick={() => setShowMenu(false)}>
             Services
           </NavLink>
         </li>
         <li className="link">
           <NavLink 
-            to="/about-us"
-            exact
+            to="/about-us/#"
+            smooth
             onClick={() => setShowMenu(false)}>
             About Us
           </NavLink>
         </li>
         <li className="link">
           <NavLink 
-            to="/contact-us"
-            exact 
+            to="/contact-us/#"
+            smooth 
             onClick={() => setShowMenu(false)}>
             Contact Us
           </NavLink>
@@ -85,16 +89,16 @@ export const NavBar = () => {
           <div>
             <ul id="menu-ul" className="menu-list">
               <li className="link">
-                <NavLink to="/" exact>Home</NavLink>
+                <NavLink smooth to="/#">Home</NavLink>
               </li>
               <li className="link">
-                <NavLink to="/services" exact>Services</NavLink>
+                <NavLink smooth to="/services/#">Services</NavLink>
               </li>
               <li className="link">
-                <NavLink to="/about-us" exact>About Us</NavLink>
+                <NavLink smooth to="/about-us/#">About Us</NavLink>
               </li>
               <li className="link">
-                <NavLink to="/contact-us" exact>Contact Us</NavLink>
+                <NavLink smooth to="/contact-us/#">Contact Us</NavLink>
               </li>
             </ul>
             <div id="menu-button" className="hidden" onClick={handleMenu}>

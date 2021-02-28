@@ -30,7 +30,7 @@ export const Services = () => {
               <span className="fas fa-fan"></span>
             </div>
             <div className="service-item-descs">
-              <h5>Residential and Recreational Vehicles Air-condition</h5>
+              <h5>Residential and Recreational Vehicles Air-conditioning</h5>
               <div className="service-item-desc">
                 <p>With our heat driven cooling technology, residential commercial...</p>
                 <p className="services-link"><Link smooth to="/services#res_rec_veh">Learn more...</Link></p>
