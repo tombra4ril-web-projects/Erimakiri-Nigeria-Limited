@@ -1,7 +1,7 @@
 import {React, useState, useEffect} from 'react'
 // import {NavLink, useHistory} from 'react-router-dom'
 import {useHistory} from 'react-router-dom'
-import {HashLink as NavLink} from "react-router-hash-link"
+import {NavHashLink as NavLink} from "react-router-hash-link"
 import './NavBar.css'
 import ViewPort from "../modules/ViewPort"
 
