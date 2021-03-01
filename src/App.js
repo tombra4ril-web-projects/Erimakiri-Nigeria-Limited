@@ -10,11 +10,13 @@ import {About} from './pages/About'
 import {Error} from './pages/Error'
 import {Footer} from "./components/Footer/Footer"
 import {NavBar} from "./components/NavBar/NavBar"
+import ScrollToTop from "./components/modules/Scrolltop"
 
 const App = () => {
   return (
     <div>
       <Router>
+        <ScrollToTop />
         <NavBar />
         <Switch>
           <Route exact path="/" component={Home}/>
