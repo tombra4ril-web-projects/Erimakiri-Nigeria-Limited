@@ -8,7 +8,7 @@ export default function ScrollToTop() {
     if(scrollTop){
       window.scrollTo(0, 0);
     }
-  }, [pathname]);
+  }, [pathname, scrollTop]);
 
   return null;
 }

@@ -3,19 +3,20 @@ import styled from "styled-components"
 
 const PopupDiv = styled.div`
   position: fixed;
-  top: 80px;
+  top: 50px;
   left: 0;
   z-index: 10000;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: calc(100vh - 80px);
+  min-width: 350px;
+  height: 100%;
   color: white;
 
   &:before{
     content: "";
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -24,7 +25,7 @@ const PopupDiv = styled.div`
   }
   .image-div{
     width: 500px;
-    height: 600px;
+    height: 500px;
     background-color: #aabbcc;
     display: flex;
     justify-content: center;
@@ -37,6 +38,7 @@ const PopupDiv = styled.div`
     border-radius: 10px;
     box-shadow: 1px 1px 1px 1px rgba(20, 20, 20, 0.5);
     overflow: auto;
+    object-fit: center;
   }
   .image-div .close-icon{
     color: white;
@@ -57,24 +59,23 @@ const PopupDiv = styled.div`
 
   @media screen and (max-width: 600px){
     .image-div{
-      width: 60%;
-      height: 60%;
-      background-color: #aabbcc;
+      width: 350px;
+      height: 350px;
     }
     .image-div .close-icon{
       width: 40px;
       height: 40px;
     }
     .image-div .close-icon{
-      top: -15px;
-      right: -15px;
+      top: -20px;
+      right: -20px;
     }
   }
 
   @media screen and (max-width: 400px){
     .image-div{
-      width: 50%;
-      height: 50px;
+      width: 250px;
+      height: 250px;
     }
     .image-div .close-icon{
       width: 30px;

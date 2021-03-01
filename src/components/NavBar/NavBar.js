@@ -108,7 +108,6 @@ export const NavBar = () => {
             <ul id="menu-ul" className="menu-list">
               <li className="link">
                 <NavLink 
-                  smooth 
                   to={{
                     pathname: "/",
                     scrollTop: true
@@ -120,7 +119,6 @@ export const NavBar = () => {
               </li>
               <li className="link">
                 <NavLink 
-                  smooth 
                   to={{
                     pathname: "/services",
                     scrollTop: true
@@ -132,7 +130,6 @@ export const NavBar = () => {
               </li>
               <li className="link">
                 <NavLink 
-                  smooth 
                   to={{
                     pathname: "/about-us",
                     scrollTop: true
@@ -144,7 +141,6 @@ export const NavBar = () => {
               </li>
               <li className="link">
                 <NavLink 
-                  smooth 
                   to={{
                     pathname: "/contact-us",
                     scrollTop: true
