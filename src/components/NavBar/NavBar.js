@@ -1,7 +1,5 @@
 import {React, useState, useEffect} from 'react'
-// import {NavLink, useHistory} from 'react-router-dom'
-import {useHistory} from 'react-router-dom'
-import {NavHashLink as NavLink} from "react-router-hash-link"
+import {NavLink, useHistory} from 'react-router-dom'
 import './NavBar.css'
 import ViewPort from "../modules/ViewPort"
 
@@ -38,7 +36,7 @@ export const NavBar = () => {
         </li>
         <li className="link">
           <NavLink 
-            to="/services/#"
+            to="/services"
             activeClassName="active"
             smooth
             onClick={() => setShowMenu(false)}>
@@ -47,7 +45,7 @@ export const NavBar = () => {
         </li>
         <li className="link">
           <NavLink 
-            to="/about-us/#"
+            to="/about-us"
             activeClassName="active"
             smooth
             onClick={() => setShowMenu(false)}>
@@ -56,7 +54,7 @@ export const NavBar = () => {
         </li>
         <li className="link">
           <NavLink 
-            to="/contact-us/#"
+            to="/contact-us"
             activeClassName="active"
             smooth 
             onClick={() => setShowMenu(false)}>
@@ -93,16 +91,16 @@ export const NavBar = () => {
           <div>
             <ul id="menu-ul" className="menu-list">
               <li className="link">
-                <NavLink smooth to="/#" activeClassName="active">Home</NavLink>
+                <NavLink smooth to="/" activeClassName="active">Home</NavLink>
               </li>
               <li className="link">
-                <NavLink smooth to="/services/#" activeClassName="active">Services</NavLink>
+                <NavLink smooth to="/services" activeClassName="active">Services</NavLink>
               </li>
               <li className="link">
-                <NavLink smooth to="/about-us/#" activeClassName="active">About Us</NavLink>
+                <NavLink smooth to="/about-us" activeClassName="active">About Us</NavLink>
               </li>
               <li className="link">
-                <NavLink smooth to="/contact-us/#" activeClassName="active">Contact Us</NavLink>
+                <NavLink smooth to="/contact-us" activeClassName="active">Contact Us</NavLink>
               </li>
             </ul>
             <div id="menu-button" className="hidden" onClick={handleMenu}>
