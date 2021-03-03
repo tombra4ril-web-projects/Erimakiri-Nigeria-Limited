@@ -69,7 +69,7 @@ li.link a::after{
   width: 50%;
   height: 100%;
 }
-li.link a:hover::after{
+li.link a:not(.active):hover::after{
   left: 0%;
   transform-origin: center;
   transform: translateX(0%);
@@ -80,14 +80,17 @@ li.link a:hover::after{
   border-left: solid 2px rgba(20, 100, 200, 0.8);
   border-radius: 5px;
 }
-li.link a:hover{
+li.link a:not(.active):hover{
   color: rgba(20, 100, 200, 0.8);
+}
+li.link a.active:hover{
+  color: rgba(20, 100, 240, 0.8);
 }
 li.link a.active{
   background-color: rgba(20, 100, 200, 0.8);
   font-weight: bolder;
   font-style: italic;
-  padding: 20px;
+  padding: 10px 20px;
   color: white;
   border-radius: 10px;
 }
@@ -140,24 +143,26 @@ li.link a.active{
   li.link a{
     color: inherit;
   }
-  li.link a::after{
+  li.link a:not(.active)::after{
     content: "";
     position: absolute;
     width: 0;
     height: 0;
   }
-  li.link a:hover{
+  li.link a:not(.active):hover{
     border-top:solid 2px rgba(20, 100, 200, 0.5);
     background-color: rgba(20, 100, 250, 0.8);
     color: white;
     transition: all 0.5s ease-in-out;
   }
   li.link a.active{
-    background-color: rgba(20, 100, 250, 0.8);
+    background-color: rgba(20, 100, 200, 0.8);
     color: white;
     border-top:solid 2px rgba(20, 100, 200, 0.5);
     font-weight: bolder;
-    font-style: italic;
+  }
+  li.link a.active:hover{
+    background-color: rgba(20, 100, 240, 0.8);
   }
   .side-bar li.link{
     margin-bottom: 20px;
