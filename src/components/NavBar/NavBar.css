@@ -85,11 +85,11 @@ li.link a:not(.active):hover{
 }
 li.link a.active:hover{
   color: rgba(20, 100, 240, 0.8);
+  color: white;
 }
 li.link a.active{
   background-color: rgba(20, 100, 200, 0.8);
   font-weight: bolder;
-  font-style: italic;
   padding: 10px 20px;
   color: white;
   border-radius: 10px;
@@ -159,6 +159,7 @@ li.link a.active{
     background-color: rgba(20, 100, 200, 0.8);
     color: white;
     border-top:solid 2px rgba(20, 100, 200, 0.5);
+    border-radius: 0;
     font-weight: bolder;
   }
   li.link a.active:hover{
