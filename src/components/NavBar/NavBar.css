@@ -84,9 +84,12 @@ li.link a:hover{
   color: rgba(20, 100, 200, 0.8);
 }
 li.link a.active{
-  color: rgba(20, 100, 200, 0.8);
+  background-color: rgba(20, 100, 200, 0.8);
   font-weight: bolder;
   font-style: italic;
+  padding: 20px;
+  color: white;
+  border-radius: 10px;
 }
 @media only screen and (max-width: 800px){
   #menu-button{
@@ -148,6 +151,13 @@ li.link a.active{
     background-color: rgba(20, 100, 250, 0.8);
     color: white;
     transition: all 0.5s ease-in-out;
+  }
+  li.link a.active{
+    background-color: rgba(20, 100, 250, 0.8);
+    color: white;
+    border-top:solid 2px rgba(20, 100, 200, 0.5);
+    font-weight: bolder;
+    font-style: italic;
   }
   .side-bar li.link{
     margin-bottom: 20px;
