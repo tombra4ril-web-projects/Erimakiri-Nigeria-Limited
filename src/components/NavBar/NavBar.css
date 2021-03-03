@@ -52,6 +52,9 @@ ul.menu-list > li{
 .link a{
   padding: 0.5rem;
 }
+.link a{
+  padding: 0.5rem;
+}
 li.link a{
   text-decoration: none;
   color: black;
@@ -84,7 +87,7 @@ li.link a:not(.active):hover{
   color: rgba(20, 100, 200, 0.8);
 }
 li.link a.active:hover{
-  color: rgba(20, 100, 240, 0.8);
+  background-color: rgba(20, 100, 250, 0.6);
   color: white;
 }
 li.link a.active{
@@ -142,6 +145,7 @@ li.link a.active{
   }
   li.link a{
     color: inherit;
+    padding: 0.5rem;
   }
   li.link a:not(.active)::after{
     content: "";
@@ -158,12 +162,11 @@ li.link a.active{
   li.link a.active{
     background-color: rgba(20, 100, 200, 0.8);
     color: white;
-    border-top:solid 2px rgba(20, 100, 200, 0.5);
     border-radius: 0;
     font-weight: bolder;
   }
   li.link a.active:hover{
-    background-color: rgba(20, 100, 240, 0.8);
+    background-color: rgba(20, 100, 250, 0.6);
   }
   .side-bar li.link{
     margin-bottom: 20px;
