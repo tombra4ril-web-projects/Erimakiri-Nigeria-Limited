@@ -145,7 +145,6 @@ li.link a.active{
   }
   li.link a{
     color: inherit;
-    padding: 0.5rem;
   }
   li.link a:not(.active)::after{
     content: "";
