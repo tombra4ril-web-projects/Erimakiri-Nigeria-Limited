@@ -60,8 +60,8 @@ const ServiceSection = () => {
                 <img src="/images/show_glass_warmer.png" alt="Show glass warmer" />
               </div>
               <div className="solutions-text">
-                <h3>solar heat driven oven</h3>
-                <p>Our heat driven oven for barbeque and smoking of fish is state of the art.</p>
+                <h3>Heat driven hot food show glass</h3>
+                <p>We use evacuated solar tubes to provide hot water vapour up to 200&deg;C to keep your food warm in the show glass and bacteria free.</p>
               </div>
             </div>
             <div className="solutions">
