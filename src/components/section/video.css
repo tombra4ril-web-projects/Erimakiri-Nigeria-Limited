@@ -1,17 +1,23 @@
-div.video-div{
-  padding-left: 18%;
-  padding-right: 18%;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  text-align: center;
+.video-div {
+  /* width is set as 100% here. any width can be specified as per requirement */
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  padding-left: 20%;
+  padding-right: 20%;
 }
-.video-div video{
+
+.video-div video {
   width: 100%;
+  max-height: 500px;
 }
 
 @media screen and (max-width: 600px){
   div.video-div{
     padding-left: 5%;
     padding-right: 5%;
+  }
+  .video-div video {
+    width: 100%;
+    max-height: 300px;
   }
 }
