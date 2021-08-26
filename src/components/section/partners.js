@@ -14,7 +14,7 @@ const Partners = () => {
     })
   }
   return (
-    <ScrollAnimation animateIn="flipInY" className="partners-div">
+    <ScrollAnimation animateIn="fadeIn" className="partners-div">
         <div className="title-head">
           <h1><span>OUR TEAM</span></h1>
         </div>
@@ -57,6 +57,14 @@ const Partners = () => {
             </div>
             <div className="partners-text">
               <h3>Technical Admin</h3>
+            </div>
+          </div>
+          <div className="partners" title="View Profile">
+            <div className="partners-img" onClick={handleClick} data-id="6">
+              <img src="/images/profile_6.jpeg" alt="Team mate" />
+            </div>
+            <div className="partners-text">
+              <h3>Mech. Design Engr.</h3>
             </div>
           </div>
         </div>

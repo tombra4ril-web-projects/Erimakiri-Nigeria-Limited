@@ -12,7 +12,7 @@ const AboutSection = () => {
           </div>
           <div className="about-text">
             <p>Erimakiri Nigeria Limited was founded in 2020 by Engr. Amakiri Eridei.</p>
-            <p>We use our cutting edge technology (vapour absorption systems) driven by waste heat to provide cooling for air-conditioning and regrigeration</p>
+            <p>We use our cutting edge technology (vapour absorption systems) driven by waste heat to provide cooling for air-conditioning and refrigeration</p>
           </div>
         </ScrollAnimation>
       </div>

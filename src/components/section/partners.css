@@ -1,10 +1,14 @@
 .partners-div{
   padding: 5rem 5%;
 }
-.partner-div{
+/* .partner-div{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+} */
+.partner-div{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 .partners{
   margin-left: 1rem;
@@ -26,6 +30,7 @@
   color: white;
   width: 200px;
   overflow: hidden;
+  justify-self: center;
 }
 .partners-img{
   cursor: pointer;
@@ -63,5 +68,13 @@
 @media screen and (max-width: 800px){
   .partners-text h3{
     font-size: 1rem;
+  } 
+  .partner-div{
+    grid-template-columns: repeat(2, 1fr);
+  } 
+}
+@media screen and (max-width: 400px){
+  .partner-div{
+    grid-template-columns: 1fr;
   } 
 }

@@ -10,7 +10,7 @@ export const Services = () => {
         <h1><span>OUR SERVICES</span></h1>
       </div>
       <div className="service-items">
-        <ScrollAnimation className="service-item first-service" animateIn='bounceInRight'>
+        <ScrollAnimation className="service-item first-service" animateIn="fadeIn">
           {/* <div > */}
             <div className="service-item-icon-div">
               <span className="fas fa-truck"></span>
@@ -24,7 +24,7 @@ export const Services = () => {
             </div>
           {/* </div> */}
         </ScrollAnimation>
-        <ScrollAnimation className="service-item second-service"  animateIn='bounceInLeft'>
+        <ScrollAnimation className="service-item second-service"  animateIn="fadeIn">
           {/* <div > */}
             <div className="service-item-icon-div">
               <span className="fas fa-fan"></span>
@@ -38,7 +38,7 @@ export const Services = () => {
             </div>
           {/* </div> */}
         </ScrollAnimation>
-        <ScrollAnimation className="service-item third-service" animateIn='bounceInRight'>
+        <ScrollAnimation className="service-item third-service" animateIn="fadeIn">
           {/* <div > */}
             <div className="service-item-icon-div">
               <span className="material-icons">house</span>
