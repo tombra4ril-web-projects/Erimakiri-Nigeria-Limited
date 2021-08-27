@@ -95,11 +95,8 @@ export const Team = () => {
         <div id="team6" className="section-div-card">
           <img src="/images/profile_6.jpeg" alt="..." onClick={handleClick}/>
           <div className="section-div-card-body">
-            <h5>Engr. Sawari</h5>
+            <h5>Engr. Sawari Daumiebi Nelly</h5>
             <div className="team-link">
-              <p>Visit to know more...</p>
-              <a href="https://twitter.com/aremieyeT" target="_blank" rel="noopener noreferrer"><span className="tw-icon fab fa-twitter"></span></a>
-              <a href="https://www.linkedin.com/in/tamaratombra-aremieye/" target="_blank" rel="noopener noreferrer"><span className="ld-icon fab fa-linkedin-in"></span></a>
             </div>
           </div>
         </div>

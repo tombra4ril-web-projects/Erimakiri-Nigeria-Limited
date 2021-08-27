@@ -64,15 +64,6 @@ const ServiceSection = () => {
                 <p>We use evacuated solar tubes to provide hot water vapour up to 200&deg;C to keep your food warm in the show glass and bacteria free.</p>
               </div>
             </div>
-            <div className="solutions">
-              <div className="solutions-img">
-                <img src="/images/ac_res_app.png" alt="Residential air condition" />
-              </div>
-              <div className="solutions-text">
-                <h3>med box</h3>
-                <p>Our heat driven oven for barbeque and smokinng of fish is state of the art.</p>
-              </div>
-            </div>
           </div>
         </ScrollAimation>
       </div>
